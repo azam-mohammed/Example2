@@ -1,9 +1,0 @@
-common/drivers/SingletonBrowserDriver.class
-common/stepDefs/NavigationStepDefs.class
-common/stepDefs/PageStepDefs.class
-common/hooks/WebHooks$1.class
-common/runner/RunSuite.class
-common/drivers/SingletonBrowserDriver$1.class
-common/runner/RunWip.class
-common/hooks/WebHooks.class
-common/drivers/BrowserType.class

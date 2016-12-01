@@ -1,14 +1,13 @@
 package common.hooks;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-
 import common.drivers.BrowserType;
 import common.drivers.SingletonBrowserDriver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 public class WebHooks {
 	
@@ -27,7 +26,7 @@ public class WebHooks {
 					return;
 				} else {
 					System.out.println("shutdown hook - 2");
-					driver.quit();
+//					driver.quit();
 				}
 			}
 		});
@@ -41,15 +40,7 @@ public class WebHooks {
 			byte[] screenshot = ((TakesScreenshot) driver)
 					.getScreenshotAs(OutputType.BYTES);
 			scenario.embed(screenshot, "image/png");
-		} /*else {
-			if (driver == null) {
-				System.out.println("shutdown hook - 1");
-				return;
-			} else {
-				System.out.println("shutdown hook - 2");
-				driver.quit();
-			}
-		}*/
+		}
 	}
 	
 }

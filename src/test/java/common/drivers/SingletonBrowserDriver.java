@@ -18,8 +18,8 @@ public class SingletonBrowserDriver {
 			case FIREFOX: {
 				FirefoxProfile fp = new FirefoxProfile();
 				fp.setAcceptUntrustedCertificates(true);
-				driver = new FirefoxDriver(fp);
-				break;
+				driver = new FirefoxDriver();
+
 			}
 			case CHROME: {
 				System.setProperty("webdriver.chrome.driver",
