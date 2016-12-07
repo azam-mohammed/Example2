@@ -1,4 +1,4 @@
-# CucumberJavaSelenium
-Cucumber + Java + Selenium as maven project
+demo test suite
 
-This is a dummy project for how to set-up cucumber + Selenium project in Java
+This suite got an dependency of a docker application in order to run and test it.
+
